@@ -5,7 +5,8 @@ function Footer() {
 
   return (
     <div className={style.container}>
-      Hola 
+      <a id="lnkEmailAddress" href="mailto:contacto%4021grados.cl">contacto@21grados.cl</a>
+      <p>© 2023 21Grados Chile</p>
     </div>
   )
 }
