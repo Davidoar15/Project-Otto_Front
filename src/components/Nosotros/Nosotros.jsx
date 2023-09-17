@@ -4,7 +4,7 @@ function Nosotros() {
 
   return (
     <div>
-      Hola 
+      Nosotros
     </div>
   )
 }
