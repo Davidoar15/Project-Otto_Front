@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import style from './Home.module.css';
 
 function Home() {
 
   return (
-    <div>
+    <div className={style.container}>
       Hola 
     </div>
   )

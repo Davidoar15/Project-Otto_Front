@@ -5,6 +5,8 @@ import Productos from './components/Productos/Productos';
 import Servicios from './components/Servicios/Servicios';
 import Nosotros from './components/Nosotros/Nosotros';
 import Error from './components/Error/Error';
+import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const navigate = useNavigate();
@@ -25,6 +27,7 @@ function App() {
 
   return (
     <div>
+      <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Productos />} />
@@ -32,6 +35,7 @@ function App() {
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

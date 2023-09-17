@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import style from './NavBar.module.css';
 
 function NavBar() {
 
   return (
-    <div>
+    <div className={style.container}>
       Hola 
     </div>
   )

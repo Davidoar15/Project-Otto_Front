@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import style from './Servicios.module.css';
 
 function Servicios() {
 
   return (
-    <div>
+    <div className={style.container}>
       Servicios 
     </div>
   )
