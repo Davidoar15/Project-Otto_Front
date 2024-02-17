@@ -1,0 +1,106 @@
+.container {
+    margin-top: 16vh;
+}
+
+.conImageSlider {
+    width: 95vw;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.conGridHome {
+    display: flex;
+    justify-content: center;
+}
+
+.conInfo {
+    margin: 0 5vh 0 5vh;
+}
+.conInfo > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    padding-bottom: 2vh;
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    margin-bottom: 5vh;
+}
+
+.conImage {
+    width: 60%;
+    height: auto;
+    margin-bottom: -4px;
+}
+.conImage > img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 40%;
+    height: auto; 
+    margin: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text > h1 {
+    color: rgb(0, 191, 255);
+    margin-left: 5vh;
+}
+.text > h3 {
+    margin-left: 3vh;
+    color: gray;
+}
+.text > p {
+    margin: 0 3vh 0 3vh;
+    line-height: 1.5rem;
+}
+
+.subText {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+    border-bottom: 1px solid gray;
+}
+.subText > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2vh;
+}
+.subText > h3 {
+    color: gray;
+}
+
+.navlink {
+    text-decoration: none;
+}
+
+.conCalc {
+    display: flex;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10vh;
+    border-radius: 10px;
+    color: gray;
+}
+.conCalc:hover {
+    background-color: rgba(125, 255, 255, 0.4);
+}
+.conCalc > h2 {
+    color: rgb(0, 191, 255);
+}
+
+.conCalcImg {
+    width: 60px;
+    height: 60px;
+}
+.conCalcImg > img {
+    width: 100%;
+    height: auto;
+}

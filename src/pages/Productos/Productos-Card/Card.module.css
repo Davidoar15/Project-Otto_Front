@@ -1,0 +1,48 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.shadow {
+    box-shadow: 0 7px 16px rgba(70, 70, 236, 0.8);
+}
+
+.imgContainer {
+    width: 50%;
+    height: auto;
+    padding-left: 10px;
+    border-radius: 50px;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 300px;
+    padding-right: 10px;
+    border-radius: 50px;
+}
+
+.name {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.price {
+    color: rgb(70, 70, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+}

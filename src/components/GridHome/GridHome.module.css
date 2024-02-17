@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10vh;
+}
+
+.imgContainer {
+    position: relative; 
+    width: 425px;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.imgContainer > h4 {
+    position: absolute;
+    margin-top: 22vh;
+    margin-left: 5vh;
+    z-index: 2; 
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imgContainer:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(125, 255, 255, 0.4), rgba(93, 93, 255, 0.4));
+    z-index: 1;
+    border-radius: 15px;
+    cursor: pointer;
+}

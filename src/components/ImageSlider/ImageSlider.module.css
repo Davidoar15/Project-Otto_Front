@@ -1,0 +1,76 @@
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.sliderStyles {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    border: 5px inset rgb(0, 102, 255);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.859);
+}
+
+.leftArrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10vh 1vh;
+    background: #65656562;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.leftArrow:hover {
+    background: #878787ae;
+    color: rgb(0, 191, 255);
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    font-size: 40px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10vh 1vh;
+    background: #65656562;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.rightArrow:hover {
+    background: #878787ae;
+    color: rgb(0, 191, 255);
+}
+
+.conDots {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: -7vh;
+    background: #65656534;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.dot {
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 35px;
+    color: white;;
+}
+.activeDot {
+    color: rgb(0, 191, 255);
+}
