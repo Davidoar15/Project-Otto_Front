@@ -7,9 +7,10 @@ import Nosotros from './pages/Nosotros/Nosotros';
 import Error from './pages/Error/Error';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-import Detalles from './pages/Productos/Product-Detalles/Detalles';
 import Calculator from './pages/Calculator/Calculator';
 import ModalBtn from './components/ContactModal/ModalBtn';
+import DetallesProducto from './pages/Productos/Producto-Detalles/DetallesProducto';
+import DetallesServicio from './pages/Servicios/Servicio-Detalles/DetallesServicio';
 
 function App() {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ function App() {
     if (location.pathname === "/") {
       return;
     }
-    const validRoutes = ["/productos", "/detalles", "/servicios", "/nosotros", "/calculadora"];
+    const validRoutes = ["/productos", "/productos/detalles", "/servicios", "/servicios/detalles", "/nosotros", "/calculadora"];
     const isValidRoute = validRoutes.some((route) =>
       location.pathname.startsWith(route)
     );
@@ -34,8 +35,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Productos />} />
-        <Route path='/detalles/:id' element={<Detalles />} />
+        <Route path='/productos/detalles/:id' element={<DetallesProducto />} />
         <Route path='/servicios' element={<Servicios />} />
+        <Route path='/servicios/detalles/:id' element={<DetallesServicio />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/calculadora' element={<Calculator />} />
         <Route path='*' element={<Error />} />

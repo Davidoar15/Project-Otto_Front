@@ -1,21 +1,22 @@
 import React from 'react';
 import style from './Productos.module.css';
 import { products } from '../../JSON/index';
-import Card from './Productos-Card/Card';
 import { NavLink } from 'react-router-dom';
+import CardProducto from './Productos-Card/CardProducto';
 
 function Productos() {
 
   return (
     <div className={style.container}>
+      <h3>NUESTROS PRODUCTOS</h3>
       <div className={style.productos}>
         {
           products.map((product) => (
             <NavLink 
-              to={`/detalles/${product.id}`}
+              to={`/productos/detalles/${product.id}`}
               className={style.navLink}
             >
-              <Card
+              <CardProducto
                 key={product.id}
                 product={product} 
               />
@@ -27,4 +28,4 @@ function Productos() {
   )
 }
 
-export default Productos
+export default Productos;

@@ -5,35 +5,35 @@ import repair from "../assets/airRepair.jpg";
 export const products = [
     {
        id: 1,
-       name: 'Rick Sanchez',
+       name: 'Product 1',
        price: '$123.000',
        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
        image: img
     },
     {
        id: 2,
-       name: 'Morty Smith',
+       name: 'Product 2',
        price: '$500.000',
        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
        image: img
     },
     {
        id: 3,
-       name: 'Summer Smith',
+       name: 'Product 3',
        price: '$20.000',
        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
        image: img
     },
     {
        id: 4,
-       name: 'Beth Smith',
+       name: 'Product 4',
        price: '$1.000.000',
        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
        image: img
     },
     {
        id: 5,
-       name: 'Jerry Smith',
+       name: 'Product 5',
        price: '$34.567',
        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
        image: img
@@ -75,5 +75,29 @@ export const repairGrid = [
    {
       title: "Título 3",
       img: repair
+   }
+]
+
+export const services = [
+   {
+      id: 1,
+      name: 'Service 1',
+      price: '$123.000',
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
+      image: repair
+   },
+   {
+      id: 2,
+      name: 'Service 2',
+      price: '$500.000',
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
+      image: repair
+   },
+   {
+      id: 3,
+      name: 'Service 3',
+      price: '$20.000',
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cumque commodi illo corporis quod fugiat suscipit laudantium ipsum? Odio illo laboriosam sit inventore alias praesentium, ipsum repellendus dolorum quibusdam aut.",
+      image: repair
    }
 ]

@@ -1,22 +1,22 @@
 import { NavLink, useParams } from 'react-router-dom';
-import style from './Detalles.module.css';
+import style from './DetallesServicio.module.css';
 import { useEffect, useState } from 'react';
-import { products } from '../../../JSON/index';
+import { services } from '../../../JSON/index';
 
-const Detalles = () => {
+const DetallesServicio = () => {
 
     const { id } = useParams();
-    const [product, setProduct] = useState(null);
+    const [service, setService] = useState(null);
 
     useEffect(() => {
-        const selectedProduct = products.find((item) => item.id === parseInt(id));
-        setProduct(selectedProduct);
+        const selectedService = services.find((item) => item.id === parseInt(id));
+        setService(selectedService);
     }, [id])
 
-    if (!product) {
+    if (!service) {
         return (
             <div className={style.container}>
-                <NavLink to={'/productos'}>
+                <NavLink to={'/servicios'}>
                     <button>Back</button>
                 </NavLink>
                 <h1>Loading...</h1>
@@ -24,13 +24,13 @@ const Detalles = () => {
         )
     }
 
-    const { name, price, description, image } = product;
+    const { name, price, description, image } = service;
 
     return (
         <div className={style.container}>
             <div>
                 <NavLink 
-                    to={'/productos'}
+                    to={'/servicios'}
                     className={style.navLink}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -44,19 +44,21 @@ const Detalles = () => {
             </div>
 
             <div className={style.product}>
-                <div className={`${style.imgContainer} ${style.shadowImg}`}>
-                    <img  src={image}/>
+                <div className={style.imgContainer}>
+                    <img src={image}/>
                 </div>
 
-                <div className={`${style.info} ${style.shadowInfo}`}>
+                <div className={style.info}>
                     <div className={style.name}>
                         <h1>{name}</h1>
                     </div>
-
+                    
                     <div className={style.price}>
                         <h2>{price}</h2>
                     </div>
 
+                    <div className={style.line}></div>
+                    
                     <div className={style.description}>
                         Descripción:
                         <p>{description}</p>
@@ -67,4 +69,4 @@ const Detalles = () => {
     );
 }
  
-export default Detalles;
+export default DetallesServicio;

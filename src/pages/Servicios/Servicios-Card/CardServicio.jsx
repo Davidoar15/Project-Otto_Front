@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './Card.module.css';
+import style from './CardServicio.module.css';
 
-function Card({ product }) {
+function CardService({ service }) {
 
-    const { name, price, image } = product;
+    const { name, price, image } = service;
 
   return (
-    <div className={`${style.cardContainer} ${style.shadow}`}>
+    <div className={style.cardContainer}>
       <div className={style.imgContainer}>
         <img 
           src={image}
@@ -28,4 +28,4 @@ function Card({ product }) {
   )
 }
 
-export default Card
+export default CardService
